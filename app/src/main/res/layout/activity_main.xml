@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/bannerAd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-8993759357277977/1338163793"
+                />
+
+
+            <TextView
+                android:id="@+id/symptomsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Symptoms"
+                android:padding="16dp"
+                android:textSize="40sp"/>
+
+            <ImageView
+                android:id="@+id/symptomsImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/symptoms" />
+
+            <TextView
+                android:id="@+id/preventionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Preventions"
+                android:padding="16dp"
+                android:textSize="40sp"/>
+
+            <ImageView
+                android:id="@+id/preventionsImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/prevention" />
+
+            <TextView
+                android:id="@+id/casesTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Corona Cases"
+                android:textSize="32sp" />
+
+            <ImageView
+                android:id="@+id/casesImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/cases" />
+
+            <TextView
+                android:id="@+id/informationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Information About Corona"
+                android:textSize="32sp" />
+
+            <ImageView
+                android:id="@+id/informationImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/information" />
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/bannerAd1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-8993759357277977/9938708547"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

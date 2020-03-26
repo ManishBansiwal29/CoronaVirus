@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00E5FF"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/bannerAd2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-8993759357277977/9656471666"
+                />
+
+            <TextView
+                android:id="@+id/symptomsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FF1744"
+                android:padding="16dp"
+                android:text="@string/SymptomsHeading"/>
+
+            <TextView
+                android:id="@+id/commonSymptoms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/commonSymptoms"
+                android:textColor="#FF1744" />
+
+            <TextView
+                android:id="@+id/otherCommonSymptoms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/otherCommonSymptoms"
+                android:textColor="#FF1744"/>
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/bannerAd3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-8993759357277977/5717226652"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
